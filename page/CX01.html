@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Moniteur des Zóne-Franches - Édition Cryptée 2057</title>
+    <style>
+        /* 1. Configuration et Style Visuel (CSS) */
+        body {
+            background-color: #f6e8c6; /* Sépia très clair */
+            color: #3b2f15; /* Brun foncé (encre) */
+            font-family: 'Georgia', 'Times New Roman', serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            text-rendering: optimizeLegibility; /* Meilleur rendu du texte */
+        }
+
+        .journal-container {
+            width: 900px;
+            margin: 0 auto;
+            border: 5px double #a67c52; /* Bordure générale pour l'aspect papier */
+            padding: 30px;
+            background-color: #fffff6; /* Papier légèrement plus blanc au centre */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Ombre légère pour effet de relief */
+        }
+
+        /* En-tête du Journal (Masthead) */
+        .masthead {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #3b2f15;
+            padding-bottom: 10px;
+        }
+        .masthead h1 {
+            font-family: 'Times New Roman', serif;
+            font-size: 4em;
+            letter-spacing: 5px;
+            margin: 0;
+            color: #3b2f15;
+            text-transform: uppercase;
+        }
+        .masthead p {
+            font-size: 1em;
+            margin: 5px 0 0;
+            border-top: 1px dotted #3b2f15;
+            padding-top: 5px;
+        }
+
+        /* Mise en Page - Colonnes */
+        .content-area {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .main-article-column {
+            flex: 2; /* 70% environ */
+            border-right: 1px dotted #a67c52;
+            padding-right: 15px;
+        }
+        .sidebar-column {
+            flex: 1; /* 30% environ */
+        }
+
+        /* Titres d'Articles */
+        h2 {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #3b2f15;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 1.3em;
+            margin-top: 20px;
+            border-bottom: 1px solid #3b2f15;
+            padding-bottom: 3px;
+        }
+
+        /* Drop Cap (Lettrine) */
+        .drop-cap:first-letter {
+            float: left;
+            font-size: 4.5em;
+            line-height: 0.8;
+            margin-right: 5px;
+            font-weight: bold;
+            color: #a67c52; /* Marron chaud */
+            padding-top: 4px;
+        }
+
+        /* Bloc de Brèves */
+        .briefs {
+            margin-top: 20px;
+            padding: 15px;
+            border: 2px dashed #a67c52;
+        }
+        .briefs h3 {
+            border: none;
+            text-align: center;
+            font-style: italic;
+            margin-top: 0;
+        }
+        .briefs ul {
+            list-style: none;
+            padding: 0;
+        }
+        .briefs li {
+            margin-bottom: 8px;
+            border-bottom: 1px dotted #f6e8c6;
+        }
+
+        /* Publicités Fictives */
+        .ad-block {
+            padding: 10px;
+            margin-top: 25px;
+            text-align: center;
+            border: 3px double #cc4444; /* Bordure de sécurité/urgence */
+            background-color: #fffaf0;
+        }
+        .ad-block.corp {
+            border: 3px double #a67c52;
+            background-color: #f0f0e0;
+        }
+        .ad-block p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+        .ad-block h4 {
+            font-size: 1.5em;
+            color: #cc4444; /* Rouge terne pour l'urgence/le danger */
+            margin: 0 0 5px 0;
+            letter-spacing: 2px;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+        .ad-block.corp h4 {
+            color: #3b2f15;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="journal-container">
+
+        <header class="masthead">
+            <h1>Le Moniteur des Zóne-Franches</h1>
+            <p>Troisième Cycle de l'Automne 2057 | Édition Cryptée | Secteur 4 | 50 Crédits</p>
+        </header>
+
+        <section class="content-area">
+
+            <div class="main-article-column">
+                <article>
+                    <h2>Choc des Réseaux : Les Implants 'Synaptic-Link' Mis en Cause dans la Récidive Émotionnelle</h2>
+                    <p class="drop-cap">
+                        La Mégapole est de nouveau au bord de la rupture nerveuse. Les rapports confidentiels de l'Autorité de Bio-Régulation (ABR) confirment ce que le marché noir et les 'net-rats' clament depuis des cycles : le très populaire implant cérébral **Synaptic-Link 7.0** d'OmniCorp présente une faille critique.
+                    </p>
+                    <p>
+                        Lancé comme la solution ultime pour l'**Hyper-Focus** et la gestion algorithmique de l'humeur, des milliers d'utilisateurs rapportent une "récidive émotionnelle" violente, des boucles de panique et des flash-backs amplifiés de traumas anciens, non effacés correctement par les protocoles de suppression d'OmniCorp. Le Dr. Kira Chen, neuro-éthicienne exilée du Secteur 7, a déclaré via un data-stream anonyme que l'implant, en tentant de purger les données neurales indésirables, ne fait que les compresser en "paquets zip toxiques" prêts à exploser sous la pression du quotidien.
+                    </p>
+                    <p>
+                        OmniCorp a initialement rejeté les allégations, les qualifiant de "cyber-légendes" propagées par des groupes de résistance anti-intégration. Cependant, la récente vague de violence dans le Secteur 9 et l'effondrement mental d'un membre éminent du Conseil des Crèdits ont forcé une enquête. Les neuro-puces sont désormais considérées comme un risque systémique. Les citoyens sont appelés à se présenter aux cliniques de désimplantation. Le prix de la mémoire neurale stable a bondi de 300% en l'espace de 48 heures.
+                    </p>
+                    <p>
+                        La peur n'est pas seulement celle d'une défaillance personnelle, mais celle de la **surveillance totale**. Si OmniCorp peut causer des boucles émotionnelles, qu'est-ce qui les empêche de programmer des réactions sociales ou politiques ? Le 'Synaptic-Link' était censé nous lier. Il nous rend esclaves. Le marché des 'cleaners' illégaux et des désimplexeurs autonomes est en pleine effervescence dans les **Zóne-Franches** de la Bordure Est. Le combat pour la souveraineté mentale n'a jamais été aussi vital.
+                    </p>
+                </article>
+            </div>
+
+            <div class="sidebar-column">
+
+                <article>
+                    <h3>Le Sénat des Drones Vote l'Extension du Mur Anti-Mutants</h3>
+                    <p style="font-style: italic;">
+                        L'instance législative robotique, dominée par les algorithmes de sécurité de Mega-Défense, a adopté la Loi 10-Gamma. Le tristement célèbre Mur de la Bordure Ouest, qui sépare la Mégapole des **Terres Mutées**, sera étendu de 500 kilomètres. L'objectif officiel est de "contenir les vecteurs biologiques non-conformes". La résistance clandestine dénonce un nouveau pas vers l'**Apartheid Biologique**, visant surtout les travailleurs indépendants et les "réfugiés" génétiquement modifiés.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Un 'Déchiffreur d'Âme' Rétro-Ingéniéré Découvert</h3>
+                    <p style="font-style: italic;">
+                        Les forces de l'ordre du Secteur 6 ont mis la main sur un dispositif de décryptage neuronal capable de lire les souvenirs stockés sur les puces mémoires. Ce 'Déchiffreur d'Âme', développé à l'origine par un think-tank déchu de Neo-Shanghai, se vendait à prix d'or sur le Marché Noir. Les autorités sont préoccupées par le potentiel de fuite de données d'**identité numérique** sensibles. Pour la population, c'est la preuve qu'aucun secret n'est à l'abri des Mégacorporations ou des criminels du Net.
+                    </p>
+                </article>
+
+                <div class="ad-block">
+                    <h4>CLOAK-NET</h4>
+                    <p style="font-weight: bold;">Votre Anonymat est Notre Affaire.</p>
+                    <p>Effacement garanti de vos **data-traces** et **logs de localisation** en moins d'une heure. Kits d'Implants de Discrétion 50% Moins Cher si paiement en crypto-non-traçable. *L'oubli à portée de votre crédits.*</p>
+                </div>
+
+                <div class="briefs">
+                    <h3>FLASH-INFO SECTEUR</h3>
+                    <ul>
+                        <li>**Pénurie de Mémoire Neurale :** Les stocks de puces de rechange sont au plus bas suite à la panique 'Synaptic-Link'. La spéculation s'envole.</li>
+                        <li>**Émeutes de l'Eau Synthétique :** Le Secteur 9 est en confinement après que les citoyens aient protesté contre la hausse des prix et la baisse de qualité du recyclage hydrique de Corp-Aqua.</li>
+                        <li>**Fusion Monstre :** La Mega-Banque **Credit-Axis** et **Synth-Finance** ont annoncé leur fusion. Le nouvel empire détient 80% des crèdits de la Mégapole. Crainte de monopole total.</li>
+                        <li>**Alerte Pollution :** La pluviométrie toxique du Cycle 3 a atteint des niveaux record dans la Bordure Sud. Les autorités conseillent de ne pas sortir sans masque filtrant de classe III.</li>
+                    </ul>
+                </div>
+
+                <div class="ad-block corp">
+                    <h4>STABILITÉ EST L'AVENIR</h4>
+                    <p>Rejoignez la Sécurité OmniCorp. Postulez pour devenir Agent de Sécurité **Bio-Augmenté** (BSO-9). Conditions : Allégeance totale au protocole 42 et absence de puces non-homologuées. Salaire en Crèdits Stables. Protégez le Système. Protégez-vous.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
