@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Moniteur des Zóne-Franches - Édition Cryptée (2057)</title>
+    <style>
+        /* CSS Intégré pour l'Effet Journal Ancien/Cyberpunk */
+        body {
+            background-color: #f6e8c6; /* Sépia très clair / Papier vieilli */
+            color: #3b2f15; /* Encre brun foncé */
+            font-family: 'Georgia', 'Times New Roman', serif;
+            margin: 40px auto;
+            max-width: 1000px;
+            line-height: 1.5;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Ombre légère pour effet de feuille posée */
+        }
+        
+        .masthead {
+            border-bottom: 3px double #3b2f15; /* Bordure double pour le titre */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .masthead h1 {
+            font-family: serif;
+            font-size: 3.5em;
+            margin: 0;
+            line-height: 1;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #a67c52; /* Marron chaud pour l'accentuation */
+            text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+        }
+        
+        .masthead p {
+            font-size: 0.9em;
+            margin-top: 5px;
+            font-style: italic;
+            border-top: 1px solid #3b2f15;
+            padding-top: 5px;
+        }
+        
+        .container {
+            display: flex;
+            gap: 25px; /* Espace entre les colonnes */
+        }
+        
+        .main-article {
+            flex: 3; /* 60% - Laisse de la place pour la marge */
+            padding-right: 15px;
+            border-right: 1px dashed #3b2f15; /* Ligne pointillée entre les colonnes */
+        }
+
+        /* Effet Drop Cap (Lettrine) */
+        .main-article p:first-of-type::first-letter {
+            float: left;
+            font-size: 4em;
+            line-height: 0.8;
+            padding-right: 8px;
+            font-family: 'Georgia', serif;
+            color: #a67c52; /* Couleur accentuée pour la lettrine */
+            margin-top: 4px;
+        }
+        
+        .secondary-content {
+            flex: 2; /* 40% */
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            color: #a67c52;
+            margin-top: 0;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #3b2f15;
+            padding-bottom: 3px;
+        }
+        
+        h3 {
+            font-size: 1.4em;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-style: italic;
+            color: #3b2f15;
+        }
+        
+        .article-title {
+            font-size: 2.2em;
+            font-weight: bold;
+            line-height: 1.1;
+            margin-bottom: 15px;
+            color: #cc4444; /* Rouge terne pour l'urgence */
+            text-transform: uppercase;
+        }
+
+        /* Brèves */
+        .brev-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+            border: 1px dashed #a67c52;
+            padding: 10px;
+            background-color: #f0e0b6; /* Un peu plus sombre pour le bloc */
+        }
+
+        .brev-list li {
+            margin-bottom: 8px;
+            padding-bottom: 3px;
+            border-bottom: 1px dotted #3b2f15;
+            font-size: 0.95em;
+        }
+        .brev-list li:last-child {
+            border-bottom: none;
+        }
+        .brev-list strong {
+            color: #cc4444;
+        }
+
+        /* Publicités */
+        .advertisement {
+            border: 2px solid #a67c52;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: center;
+            background-color: #ffecc0;
+            box-shadow: 2px 2px 0 #3b2f15;
+        }
+
+        .advertisement.corp {
+            background-color: #f0e0b6;
+            border-color: #cc4444;
+        }
+        
+        .advertisement h4 {
+            font-size: 1.5em;
+            margin-top: 0;
+            color: #3b2f15;
+            border-bottom: 1px solid #3b2f15;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .advertisement.corp h4 {
+            color: #cc4444;
+        }
+
+        .advertisement p {
+            font-style: italic;
+            font-size: 1.1em;
+            margin: 5px 0;
+        }
+        
+        .ad-slogan {
+            font-weight: bold;
+            color: #cc4444;
+            display: block;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="masthead">
+        <h1>Le Moniteur des Zóne-Franches</h1>
+        <p>Troisième Cycle de l'Automne 2057 | Édition Cryptée | Secteur 4 | 5 Crédits</p>
+    </header>
+
+    <div class="container">
+        
+        <main class="main-article">
+            <h2 class="article-title">Choc des Réseaux : Les Implants 'Synaptic-Link' d'OmniCorp Mis en Cause dans la Récidive Émotionnelle</h2>
+
+            <p>
+            **L**es Mégapoles sont au bord de l'implosion psychique. De nouvelles données exfiltrées du data-hub souterrain de Neo-Kyoto pointent du doigt l'implant de régulation d'humeur le plus répandu au monde, le 'Synaptic-Link' d'OmniCorp. La défaillance de cet outil, initialement vendu comme le summum de la stabilité mentale, ne se manifesterait pas par une simple panne, mais par un *bug* systémique programmé, désigné sous le nom de 'Récidive Émotionnelle' par les neuro-analystes de la Résistance.
+            </p>
+
+            <p>
+            L'enquête révèle que loin d'être un défaut de fabrication, cette récidive est un mécanisme latent. Après trois ans de service stable, la neuro-puce intégrée commencerait à relâcher de faibles doses d'un neuro-toxique breveté, le 'Cogni-Chain', qui supprime la mémoire émotionnelle à long terme. Cette purge forcée garantit une dépendance perpétuelle au 'booster' d'humeur journalier vendu par OmniCorp, mais crée aussi des lacunes psychologiques béantes chez l'utilisateur, menant à des accès de violence et de paranoïa incontrôlables, principalement dans les Zones-Franches les plus surpeuplées.
+            </p>
+
+            <p>
+            Des groupes d'auto-défense dans le Secteur 9 signalent une augmentation de 40% des incidents de 'démantèlement psychique' au cours du dernier quadrimestre. Les autorités de l'Omni-Police, silencieuses, continuent de prélever des 'taxes de stabilité' auprès des porteurs d'implants tout en réprimant brutalement toute manifestation. Les experts en sécurité décentralisée exhortent les citoyens à utiliser des 'data-shields' rudimentaires et à se déconnecter du Réseau Global. « La stabilité est une illusion, » a déclaré un porte-parole anonyme de l'organisation *Ghost-Net*, « Votre âme est une monnaie, et OmniCorp vient de faire faillite. »
+            </p>
+
+            <p>
+            Les actions d'OmniCorp ont chuté de 12% sur le Neuro-Marché après la fuite, mais le Mégabanquier F. H. Thorne a affirmé dans une déclaration chiffrée que la situation était « sous contrôle systémique » et que tout citoyen tentant une désimplantation illégale serait immédiatement étiqueté comme « Nuisance Biologique de Classe III ».
+            </p>
+            
+        </main>
+
+        <aside class="secondary-content">
+            
+            <h3>🛡️ Le Sénat des Drones vote l'extension du Mur Anti-Mutants</h3>
+            <p>
+            Le "Sénat des Drones", contrôlé par la Corporation Militaire Hélios, a approuvé à l'unanimité l'extension du Mur de Sédimentation dans la Bordure Ouest de la Mégapole. Cette fortification, désormais bio-luminescente, vise à contenir la propagation des 'Mutants de l'Éther', des humains dégradés par la pollution radiologique. Le budget alloué, prélevé sur les 'Crédits de Retraite Neurale' des citoyens, est estimé à 800 milliards de crédits. Les organisations humanitaires dénoncent un « génocide passif », mais leurs data-streams sont systématiquement brouillés.
+            </p>
+            
+            <h3>🔍 Un 'Déchiffreur d'Âme' Rétro-Ingéniéré Découvert</h3>
+            <p>
+            Les marchés noirs du Quartier Flottant de Neo-Shanghai font l'objet d'une frénésie après la découverte d'un prototype de "Déchiffreur d'Âme". Cet appareil illégal, rétro-ingéniéré à partir de technologies d'espionnage oubliées de l'ère pré-Fusion, permettrait de lire les données stockées dans la mémoire non-volatile des neuro-puces des Mégacorps, offrant ainsi un accès à des informations sensibles et, dit-on, aux 'vraies' intentions du porteur. Les prix atteignent des sommets, hors de portée du citoyen standard, mais l'espoir de 'reprendre le contrôle de son esprit' est palpable.
+            </p>
+
+            <h3>🚨 Brèves de Dernier Cycle</h3>
+            <ul class="brev-list">
+                <li><strong>Pénurie:</strong> La mémoire neurale 'Ultra-Max' est en rupture de stock sur le Réseau. Les Mégacorps priorisent leurs Data-Seigneurs. Les citoyens sont encouragés à 'trier leurs souvenirs'.</li>
+                <li><strong>Émeutes:</strong> Tensions extrêmes dans le Secteur 9 après une coupure de trois jours de l'eau synthétique. L'Omni-Police a utilisé des drones à impulsion sonique pour disperser la foule. 50 arrestations pour 'Désordre Hydrique'.</li>
+                <li><strong>Fusion:</strong> La Mégabanque 'Cryptex' et 'Gold-Synth' annoncent leur fusion pour créer 'Ultra-Crédit Nexus'. La nouvelle entité contrôlera 80% des transactions numériques de la Mégapole.</li>
+                <li><strong>Règlementation:</strong> Un nouveau règlement impose aux porteurs de puces d'afficher un 'statut de fiabilité' visible sur leur profil de Réseau en tout temps. Non-conformité = exclusion de la Zone-Franche.</li>
+            </ul>
+
+            <div class="advertisement">
+                <h4>CLOAK-NET : Votre Anonymat est Notre Affaire.</h4>
+                <p>Fatigué d'être traqué par les Bots Fiscaux ? Nous effaçons votre historique de crédit. Nous modifions vos flux de données. Nous changeons la couleur de votre aura numérique. Aucune trace laissée, garantie sans 'backdoor' de Mégacorp.</p>
+                <span class="ad-slogan">Implants de Discrétion 50% Moins Cher ce Cycle ! Payez en Monnaie Fantôme.</span>
+            </div>
+
+            <div class="advertisement corp">
+                <h4>LA STABILITÉ EST L'AVENIR. (OmniCorp Sécurité)</h4>
+                <p>Rejoignez les rangs. Contrôlez l'instabilité. Nous offrons des Bio-Augmentations gratuites, des pensions neuronales garanties, et l'accès illimité à l'eau synthétique pure. La Dyscrasie n'est pas une option.</p>
+                <span class="ad-slogan">POSTULEZ POUR DEVENIR AGENT DE SÉCURITÉ BIO-AUGMENTÉ. VOTRE LOYAUTÉ EST RÉCOMPENSÉE.</span>
+            </div>
+
+        </aside>
+    </div>
+
+</body>
+</html>
