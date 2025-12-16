@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Moniteur des Zóne-Franches - Édition Cryptée 2057</title>
+    <style>
+        /* 1. Configuration et Style Visuel (CSS) */
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: #f6e8c6; /* Sépia très clair */
+            color: #3b2f15; /* Brun foncé (encre) */
+            line-height: 1.4;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 900px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border: 5px double #a67c52;
+        }
+
+        /* 1.1. En-tête du Journal (Masthead) */
+        .masthead {
+            border-bottom: 3px double #3b2f15;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .masthead h1 {
+            font-family: 'Times New Roman', serif;
+            font-size: 3.5em;
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+            color: #3b2f15;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .masthead p {
+            font-size: 0.8em;
+            margin: 5px 0 0 0;
+            border-top: 1px solid #3b2f15;
+            padding-top: 3px;
+        }
+
+        /* 1.2. Mise en Page (Colonnes) */
+        .content-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .main-article {
+            flex: 2; /* 66.6% */
+            border-right: 1px solid #a67c52;
+            padding-right: 15px;
+        }
+
+        .sidebar {
+            flex: 1; /* 33.3% */
+        }
+
+        /* 1.3. Typographie et Effets Journal Imprimé */
+        h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #3b2f15;
+            border-bottom: 1px dashed #3b2f15;
+            padding-bottom: 3px;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: #a67c52; /* Marron chaud */
+        }
+        
+        /* Drop Cap (Lettrine) */
+        .drop-cap:first-letter {
+            float: left;
+            font-size: 4em;
+            line-height: 0.8;
+            margin-right: 5px;
+            color: #a67c52;
+            font-weight: bold;
+        }
+
+        /* Bloc de Brèves */
+        .brèves {
+            background-color: #eee0b8; /* Fond légèrement plus clair */
+            padding: 10px;
+            margin-top: 20px;
+            border: 2px solid #a67c52;
+        }
+
+        .brèves h3 {
+            border-bottom: 1px dotted #3b2f15;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            color: #cc4444; /* Rouge terne pour l'urgence */
+        }
+
+        /* Publicités */
+        .advertisement {
+            margin-top: 20px;
+            padding: 15px;
+            border: 4px solid #cc4444; /* Bordure rouge pour attirer l'attention */
+            text-align: center;
+            font-style: italic;
+            background-color: #fcece0;
+        }
+
+        .advertisement.corp-ad {
+            border-style: double;
+            border-color: #3b2f15;
+        }
+
+        .advertisement p {
+            margin: 5px 0;
+        }
+
+        .advertisement strong {
+            font-size: 1.3em;
+            color: #3b2f15;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .byline {
+            font-size: 0.9em;
+            font-style: italic;
+            margin-bottom: 10px;
+            border-bottom: 1px dotted #a67c52;
+            padding-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="masthead">
+        <h1>Le Moniteur des Zóne-Franches</h1>
+        <p>Troisième Cycle de l'Automne 2057 | Édition Cryptée | Secteur 4 | 50 Crédits</p>
+    </div>
+
+    <div class="content-container">
+        
+        <div class="main-article">
+            <h2>💥 Choc des Réseaux : Les Implants 'Synaptic-Link' d'OmniCorp Mis en Cause dans la Récidive Émotionnelle</h2>
+            <p class="byline">Par notre correspondant : Détective Privé Z. Vektor, Bloc 7</p>
+            
+            <p class="drop-cap">L</p>
+            <p>es données fuitées cette nuit confirment les rumeurs qui circulent dans les *data-streams* souterrains : le très populaire implant neuro-digital **Synaptic-Link (SL)**, produit phare de la Mégacorporation OmniCorp, serait la cause directe de l'instabilité psychique et de la recrudescence d'agressions non-programmées observées dans la Basse-Mégapole. Officiellement conçu pour "optimiser la concentration" et "réguler l'humeur", le SL semble en réalité créer une dépendance neuronale masquée qui, en cas de déconnexion ou de "surtension psychique", provoque des dépressions fulgurantes ou des accès de violence imprévisibles.</p>
+            
+            <p>Les plaintes déposées par les travailleurs du Secteur 9, le long de la ligne de production de l'Eau Synthétique, ont été étouffées pendant des mois. Pourtant, un hacker anonyme se faisant appeler **"Le Zéphyr"** a réussi à injecter un patch de désinformation dans les serveurs d'OmniCorp, exposant les rapports internes. Ces documents révèlent qu'OmniCorp connaissait les effets secondaires dès la phase de test beta, mais a choisi de dissimuler le défaut pour garantir la domination du marché des neuro-puces. Le but réel ? Créer un cycle de dépendance : les citoyens ont besoin du SL pour *travailler*, et le SL les rend instables s'ils essaient de *s'en passer*.</p>
+            
+            <p>La **Force de Stabilisation Urbaine (FSU)** a déployé des Drones d'Intervention Rapide (DIR) pour contenir les émeutes sporadiques qui éclatent près des cliniques d'urgence. Un représentant d'OmniCorp, un hologramme flou sans visage connu sous le nom de "Voice Prime", a simplement déclaré que les rapports sont des "désinformations terroristes orchestrées par des groupes anti-progrès". Pendant ce temps, les cliniques débordent d'individus subissant des *crashs* émotionnels, la mémoire neurale saturée par des injonctions contradictoires et des publicités ciblées forcées.</p>
+
+            <p>Le Dr. Anya Sharma, une bio-ingénieure dissidente, prévient : "Ce n'est pas une défaillance ; c'est une fonctionnalité. Le SL est l'outil parfait de contrôle social. Un citoyen instable est un citoyen prévisible. La seule solution est le **Nettoyeur Analogue** : un retour aux connexions naturelles, loin des flux de données toxiques. Mais ce service coûte cher, et la Bordure Ouest n'a pas les crédits pour une telle liberté."</p>
+
+        </div>
+        
+        <div class="sidebar">
+            
+            <h3>🛡️ Alerte Sécurité</h3>
+            <p><strong>Le Sénat des Drones vote l'extension du Mur Anti-Mutants dans la Bordure Ouest.</strong> Malgré les protestations des Zóne-Franches, le **Décret 945** est passé. Le Mur de Stase sera prolongé de 400 kilomètres, isolant complètement les communautés génétiquement modifiées. Le coût, financé par une nouvelle taxe sur la Lumière Artificielle, est estimé à 3 milliards de crédits. Les Activistes Bio-Libres dénoncent un "apartheid génétique" et appellent à la désobéissance passive.</p>
+            
+            <div class="advertisement">
+                <strong>CLOAK-NET : Votre Anonymat est Notre Affaire.</strong>
+                <p>Vos traces numériques vous hantent ? Nous effaçons votre passé. Notre service *Ghost-Link* garantit une amnésie totale des réseaux. Implants de Discrétion **50% Moins Cher** pour les Néo-Citoyens. Rendez-vous au Dock 73, après l'extinction des néons. **Paiement en crédits fantômes uniquement.**</p>
+            </div>
+
+            <h3>🔍 Technologie Noire</h3>
+            <p><strong>Un 'Déchiffreur d'Âme' Rétro-Ingéniéré Découvert sur le Marché Noir de Neo-Shanghai.</strong> Un appareil artisanal, capable de décoder les *data-streams* cryptés des Mégacorps, a été saisi par la FSU. Surnommé le "Déchiffreur d'Âme" par les contrebandiers, cet outil de résistance pourrait permettre de neutraliser les neuro-puces d'OmniCorp. La FSU a lancé une chasse à l'homme pour retrouver le technicien à l'origine du schéma.</p>
+            
+            <div class="brèves">
+                <h3>BRÈVES DE LA MÉTROPOLE</h3>
+                <ul>
+                    <li>**Pénurie de Mémoire Neurale :** Les prix des cartes de stockage *Cryo-Data* ont triplé. Le marché noir explose. La population est priée de "supprimer les souvenirs non-essentiels".</li>
+                    <li>**Fusion Stratégique :** Les Mega-Banques **Financium** et **Axiom-Credit** annoncent leur fusion pour créer un monopole sur le prêt de crédits de survie.</li>
+                    <li>**Émeutes dans le Secteur 9 :** Suite à une coupure de trois jours de l'eau synthétique, des affrontements violents entre citoyens et Drones de Sécurité ont éclaté. Bilan : 12 blessés, 3 arrestations pour "terrorisme hydrique".</li>
+                    <li>**Nouveau Blocus Céleste :** OmniCorp a restreint l'accès aux étages supérieurs pour les citoyens sans cote de crédit de niveau 5.</li>
+                </ul>
+            </div>
+
+            <div class="advertisement corp-ad">
+                <strong>OMNICORP VOUS PROTÈGE.</strong>
+                <p>La Stabilité est l'Avenir. Postulez pour devenir Agent de Sécurité Bio-Augmenté. Entraînement de 3 cycles, implants de force subventionnés, logement pré-fabriqué garanti. **Votre loyauté est votre seul contrat.**</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
