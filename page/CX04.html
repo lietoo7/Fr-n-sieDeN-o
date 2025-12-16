@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Moniteur des Zóne-Franches - 2057</title>
+    <style>
+        /* ------------------------------------------- */
+        /* BASE DE PAGE ET COULEURS SÉPIA */
+        /* ------------------------------------------- */
+        body {
+            background-color: #f6e8c6; /* Sépia très clair / Papier */
+            color: #3b2f15; /* Brun foncé / Encre */
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.5;
+            padding: 30px;
+            margin: 0;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Ombre légère pour effet de papier */
+        }
+        
+        a {
+            color: #3b2f15;
+            text-decoration: none;
+            border-bottom: 1px dotted #a67c52;
+        }
+
+        /* ------------------------------------------- */
+        /* EN-TÊTE DU JOURNAL (MASTHEAD) */
+        /* ------------------------------------------- */
+        .masthead {
+            text-align: center;
+            border-bottom: 3px double #3b2f15;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .masthead h1 {
+            font-family: 'Times New Roman', serif;
+            font-size: 3.5em;
+            margin: 0;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: #cc4444; /* Rouge terne pour l'urgence */
+            text-shadow: 1px 1px #a67c52;
+        }
+        
+        .masthead p {
+            margin-top: 5px;
+            font-size: 0.9em;
+            font-style: italic;
+            border-top: 1px solid #3b2f15;
+            padding-top: 5px;
+            color: #a67c52; /* Marron chaud pour l'accent */
+        }
+
+        /* ------------------------------------------- */
+        /* STRUCTURE À DEUX COLONNES */
+        /* ------------------------------------------- */
+        .container {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .col-main {
+            flex: 7; /* 70% */
+            padding-right: 15px;
+            border-right: 1px solid #a67c52; /* Ligne de séparation subtile */
+        }
+        
+        .col-sidebar {
+            flex: 3; /* 30% */
+        }
+
+        /* ------------------------------------------- */
+        /* TYPOGRAPHIE ET EFFETS DE JOURNAL */
+        /* ------------------------------------------- */
+        
+        /* Titre des Articles */
+        h2 {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.8em;
+            font-weight: bold;
+            line-height: 1.1;
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #3b2f15;
+            text-transform: uppercase;
+        }
+        
+        /* Sous-Titres/Accents */
+        h3 {
+            font-size: 1.1em;
+            color: #a67c52;
+            margin-bottom: 5px;
+            border-bottom: 1px dotted #a67c52;
+            padding-bottom: 2px;
+            font-weight: normal;
+        }
+
+        /* Drop Cap (Lettrine) */
+        .dropcap::first-letter {
+            float: left;
+            font-size: 4em;
+            line-height: 0.7;
+            margin-right: 8px;
+            font-weight: bold;
+            color: #a67c52; /* Couleur d'accent */
+        }
+        
+        /* Contenu secondaire / Articles Breves */
+        .sidebar-item {
+            border: 1px solid #e0d5b8; /* Bordure très claire pour encadrer */
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #fcf8ee;
+        }
+        
+        .breves ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .breves li {
+            margin-bottom: 10px;
+            border-bottom: 1px dotted #e0d5b8;
+            padding-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        /* ------------------------------------------- */
+        /* PUBLICITÉ FICTIVE */
+        /* ------------------------------------------- */
+        .ad {
+            text-align: center;
+            padding: 10px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            border: 2px solid #3b2f15;
+            background-color: #e0d5b8;
+            font-style: italic;
+            font-size: 0.85em;
+        }
+        
+        .ad h4 {
+            font-size: 1.3em;
+            color: #cc4444;
+            margin: 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="masthead">
+        <h1>LE MONITEUR DES ZÓNE-FRANCHES</h1>
+        <p>Troisième Cycle de l'Automne 2057 | Édition Cryptée | Secteur 4 | 5 Crédits</p>
+    </header>
+
+    <div class="container">
+
+        <main class="col-main">
+            <article>
+                <h2>CRASH NEURONAL : LES IMPLANTS 'SYNAPTIC-LINK' ACCUSÉS DE DÉSORDRE ÉMOTIONNEL DE MASSE</h2>
+                <p style="font-style: italic; color: #a67c52; margin-top: -10px;">Par A. KANE, Datastreams Clandestins. Alerte Rouge.</p>
+
+                <p class="dropcap">
+                    **L**es Mégapoles sont au bord de la rupture psychique. La puce neurale la plus omniprésente de la décennie, le 'Synaptic-Link' développé par la toute-puissante OmniCorp, serait à l'origine d'une vague sans précédent de « Récidive Émotionnelle ». Des millions de citoyens connectés, censés bénéficier d'une filtration du stress et d'une amélioration cognitive, rapportent des sautes d'humeur violentes, des épisodes de terreur panique et, pire, une incapacité totale à former de nouveaux souvenirs stables. Le Système est en train de dérégler l'Âme.
+                </p>
+
+                <p>
+                    Les signalements, initialement étouffés par le Département de l'Hygiène Mentale, ont explosé sur les data-streams privés des Zone-Franches. Des techniciens dissidents affirment que le dernier patch de microcode d'OmniCorp, déployé il y a 72 heures, contient une boucle de rétroaction défectueuse. Plutôt que de modérer les impulsions de stress, l'implant semble amplifier et réinjecter les traumatismes mémorisés, transformant la vie quotidienne en un cauchemar neurologique récurrent. OmniCorp maintient que ces troubles sont des « effets d'adaptation mineurs » liés à la "Mise à Jour 4.7.1".
+                </p>
+
+                <p>
+                    Les cliniques de l'ombre de la Secteur Bas ont vu affluer des milliers de personnes désireuses de procéder à une désinstallation d'urgence. Cependant, retirer le 'Synaptic-Link' sans l'outil propriétaire d'OmniCorp entraîne souvent des dommages irréversibles. La Mégacorporation, en réponse, a mis en place un verrouillage des protocoles de désinstallation, accusant les « Hackers Télopathiques » de la Résistance d'avoir provoqué cette crise. Pendant ce temps, les Crédits pleuvent sur les marchés, les cours des neuro-puces concurrentes s'envolent, et le citoyen moyen ne sait plus s'il peut faire confiance à son propre cerveau. La question n'est plus : "Êtes-vous connecté ?", mais : "**Contrôlez-vous toujours votre connexion ?**"
+                </p>
+            </article>
+        </main>
+
+        <aside class="col-sidebar">
+
+            <div class="sidebar-item">
+                <h3>VAGUE DE PURGE : LES CYBER-FÉDÉRAUX BLINDENT LE SECTEUR 7</h3>
+                <p style="font-size: 0.9em; margin-top: 5px;">
+                    Le Consortium du Bloc de l'Ordre a déclenché l'« Opération PANDORE » dans le Secteur 7. Les drones de surveillance ont été remplacés par des unités tactiques cybernétiques de la *Force de Maintien*. Officiellement, il s'agit de « désactiver les nids de contrebande de Data-Rétro ». En réalité, les rapports chuchotés par les passeurs indiquent la capture de plusieurs figures clés du mouvement d'insoumission *Ghost-Net*. Le couvre-feu est strict, et les transferts de crédits sont gelés.
+                </p>
+            </div>
+
+            <div class="sidebar-item">
+                <h3>TECHNO-RÉSISTANCE : LE JAPONSOIR DÉVELOPPE UN FILTRE ANTI-PUBLICITÉ CÉRÉBRALE</h3>
+                <p style="font-size: 0.9em; margin-top: 5px;">
+                    La Résistance de l'Archipel, connue sous le nom de *Japansoir*, aurait mis au point un minuscule dispositif capable d'écrêter les flux publicitaires forcés directement injectés dans le cortex via les installations publiques. Nom de code : « Silence Blanc ». L'appareil est illégal, sa distribution est lente et dangereuse, mais son existence même représente un défi philosophique et économique majeur à l'hégémonie des Mégacorporations qui tirent 90% de leurs revenus de l'invasion attentionnelle.
+                </p>
+            </div>
+            
+            <div class="ad">
+                <h4>NETTOYEZ VOS TRACES !</h4>
+                <p>Besoin de faire disparaître un profil ? Un oubli ? Le Cerveau est Traçable. L'<span style="color: #a67c52;">Effaceur de Mémoire</span> est Indétectable.</p>
+                <p>Contactez **Proxy Zero** – Rues Sombres. Prix négociables en Chaines de Bloc.</p>
+            </div>
+            
+            <div class="breves">
+                <h3>BRÈVES DE LA ZONE</h3>
+                <ul>
+                    <li>**Fusion de l'Eau-Vie :** Bio-Techs annonce que le prix de l'eau potable synthétisée a augmenté de 12% ce cycle, citant des « difficultés de minéralisation » dans le Bloc Sud.</li>
+                    <li>**Drones Rebelles :** Trois drones de livraison de niveau 5 ont été retrouvés « reformatés » et tagués de symboles anti-système dans le Secteur 2. Sabotage ou autonomie émergente ?</li>
+                    <li>**Émeutes de la Ration :** Les émeutes se poursuivent dans le Niveau Profond suite à l'introduction du nouveau Standard Alimentaire « Protéine Grise ».</li>
+                    <li>**Annonce Corporatiste :** OmniCorp recrute en urgence des « Techniciens d'Optimisation Neuronale » pour gérer la crise du Synaptic-Link. Prime élevée.</li>
+                </ul>
+            </div>
+            
+            <div class="ad">
+                <h4>VOUS ÊTES UN CRÉDIT PRÉCIEUX.</h4>
+                <p style="color: #3b2f15; font-weight: bold;">Le Crédit ne dort jamais. Assurez votre identité numérique avec <span style="color: #cc4444;">**Omni-Assurance**</span>. Protégez-vous des « désinstallations sauvages » !</p>
+            </div>
+
+        </aside>
+
+    </div>
+</body>
+</html>
